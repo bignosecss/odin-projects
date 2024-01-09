@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS of part1 */
+
+.part1 {
+    display: flex;
+    background-color: #1f2937;
+}
+
+.content-container1 {
+    padding: 0 10%;
+    padding-top: 2rem;
+    margin-bottom: 11rem;
+}
+
+.menu {
+    display: flex;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.one {
+    margin-left: auto;
+}
+
+.two,
+.three {
+    margin-left: 2.4rem;
+}
+
+.header-link {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.web-intro {
+    display: flex;
+    align-items: stretch;
+    margin-top: 11rem;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text, .image {
+    flex: 1;
+}
+
+.text h1 {
+    color: #f9faf8;
+    font-size: 48px;
+}
+
+.text p {
+    color: #e5e7eb;
+    font-size: 18px;
+    padding-bottom: .6rem;
+}
+
+.signup-btn1 {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 8px 24px;
+    border-radius: 7px;
+}
+
+/* CSS of part2 */
+
+.part2 {
+    display: flex;
+}
+
+.content-container2 {
+    margin: 50px 270px 100px 270px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtext-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtext-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 3.6rem;
+}
+
+.subtext-item img {
+    border-radius: 10px;
+}
+
+.subtext-item img,
+.subtext-item p {
+    width: 100%;
+}
+
+/* CSS of part3 */
+
+.part3 {
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    margin: 9rem 24rem;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quoter {
+    align-self: flex-end;
+}
+
+/* CSS of part4 */
+
+.part4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.4rem 11rem;
+}
+
+.call-to-action-container {
+    border-radius: .4rem;
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space;
+    align-items: center;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 11rem;
+}
+
+.call-text h3,
+.signup-btn2 {
+    color: #f9faf8;
+}
+
+.call-text p {
+    color: #e5e7eb;
+}
+
+.signup-btn2 {
+    background-color: #3882f6;
+    padding: .4rem 2rem;
+    border: #f9faf8 solid;
+    border-radius: 7px;
+}
+
+/* CSS of footer */
+
+footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}

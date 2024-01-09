@@ -1,0 +1,151 @@
+:root {
+    --text-padding: 80px 30px 0 80px;
+    --bg-color: rgb(238, 238, 238, 0.4);
+    --logo-bg-color: rgba(0, 0, 0, 0.5);
+    --btn-bg-color: #596D48;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.picture {
+    background-image: url('../image/1.jpg');
+    background-position: center;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    width: 45vw;
+}
+
+.logo {
+    height: 15vh;
+    background-color: var(--logo-bg-color);
+    position: relative;
+    top: 20vh;
+    padding: 20px 0;
+    gap: 1vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo-img {
+    height: 10vh;
+}
+
+.odin {
+    color: white;
+}
+
+
+
+.message {
+    height: 35vh;
+    background-color: var(--bg-color);
+    padding: var(--text-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 2.4em;
+}
+
+.sign-up {
+    height: 65vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info,
+.account {
+    flex: 1;
+}
+
+.sign-up h3,
+.user-info {
+    --text-padding:30px;
+
+    display: flex;
+    padding: 10px 0 20px 80px;
+    gap: 80px;
+}
+
+.user-info {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.col li {
+    display: flex;
+    flex-direction: column;
+    width: 16em;
+    margin-bottom: 2em;
+}
+
+.col label {
+    color: #565758;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.col input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+
+    padding: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.col input:focus {
+    border: 1px solid blue;
+    box-shadow: 2px 2px 6px 1px rgb(0, 0, 0, 0.2);
+}
+
+.account {
+    background-color: var(--bg-color);
+}
+
+.create {
+    height: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+
+    margin-top: 45px;
+    margin-left: 80px;
+    padding: 0 40px;
+
+    background-color: var(--btn-bg-color);
+    border-radius: 7px;
+    border: none;
+}
+
+.create:hover {
+    background-color: rgb(118, 151, 89);
+    cursor: pointer;
+}
+
+.tip {
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.tip a {
+    color: #596D48;
+    text-decoration: none;
+    margin-left: .4em;
+}
