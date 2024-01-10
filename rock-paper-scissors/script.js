@@ -6,35 +6,59 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    while(true) {
-        if (playerSelection.toLowerCase() == "rock" && computerSelection.toLowerCase() == "paper") {
-            return `You Lose! Paper beats Rock`;
-        }
-        else if (playerSelection.toLowerCase() == "rock" && computerSelection.toLowerCase() == "scissors") {
-            return `You win! Rock beats Scissors`;
-        }
-
-        else if (playerSelection.toLowerCase() == "paper" && computerSelection.toLowerCase() == "scissors") {
-            return `You lose! Scissors beats Paper`;
-        }
-        else if (playerSelection.toLowerCase() == "paper" && computerSelection.toLowerCase() == "rock") {
-            return `You win! Paperr beats Rock`;
-        }
-
-        else if (playerSelection.toLowerCase() == "scissors" && computerSelection.toLowerCase() == "rock") {
-            return `You lose! Rock beats Scissors`;
-        }
-        else if (playerSelection.toLowerCase() == "scissors" && computerSelection.toLowerCase() == "paper") {
-            return `You win! Scissors beats Paper`;
-        }
-            
-
-        else
-            console.log(`TIE! Replay.`);
+    if (playerSelection.toLowerCase() === "rock" && computerSelection.toLowerCase() === "paper") {
+        return `You Lose! Paper beats Rock`;
     }
-    
+    else if (playerSelection.toLowerCase() === "rock" && computerSelection.toLowerCase() === "scissors") {
+        return `You win! Rock beats Scissors`;
+    }
+
+    else if (playerSelection.toLowerCase() === "paper" && computerSelection.toLowerCase() === "scissors") {
+        return `You lose! Scissors beats Paper`;
+    }
+    else if (playerSelection.toLowerCase() === "paper" && computerSelection.toLowerCase() === "rock") {
+        return `You win! Paperr beats Rock`;
+    }
+
+    else if (playerSelection.toLowerCase() === "scissors" && computerSelection.toLowerCase() === "rock") {
+        return `You lose! Rock beats Scissors`;
+    }
+    else if (playerSelection.toLowerCase() === "scissors" && computerSelection.toLowerCase() === "paper") {
+        return `You win! Scissors beats Paper`;
+    }
+        
+
+    else {
+        return `TIE! Replay.`;
+    }
+
 }
 
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+function game() {
+    let playerWins = 0;
+    let computerWins = 0;
+
+    while (playerWins < 3 && computerWins < 3) {
+        const playerSelection = prompt("请选择 Rock, Paper, Scissors: ");
+        const computerSelection = getComputerChoice();
+
+        const resultMsg =  playRound(playerSelection, computerSelection);
+        console.log(resultMsg);
+
+        // Find the "win" or "lose"
+        if (resultMsg.includes("win")) {
+            playerWins += 1;
+        } else if (resultMsg.includes("lose")) {
+            computerWins += 1;
+        }
+    }
+
+    if (playerWins === 3) {
+        console.log("You win the game!");
+    } else {
+        console.log("Computer win the game!");
+    }
+
+}
+
+game();
